@@ -1,3 +1,7 @@
+{% if blog.image.url != None %}
+<img src="{{ blog.image.url }}" height="400", width="400">
+{% endif %}
+
 <h1> {{ blog.student_name }} </h1>
 <h3>Last Updated: {{blog.date}} </h3>
 
@@ -6,7 +10,7 @@
 <br> Faculty: {{ blog.faculty_name }}
 <br> Term: {{blog.term}}
 </h3>
-
+{{ blog.image }}
 <p> About: {{blog.short_biography}}
 <br><br>
-Intersets and Hobbies: {{blog.interests_and_hobbies}}</p>
+Interests and Hobbies: {{blog.interests_and_hobbies}}</p>

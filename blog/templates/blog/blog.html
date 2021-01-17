@@ -3,8 +3,6 @@
 
 {% for blog in blogs %}
 <br>
-
-
 <a href = "{% url 'detail' blog.id %}"><h2>{{ blog.student_name }}</h2></a>
 <h3>Last Updated: {{blog.date}} </h3>
 <p> University Name: {{ blog.uni_name }}
