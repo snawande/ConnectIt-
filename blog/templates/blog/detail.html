@@ -1,3 +1,37 @@
+
+<style>
+    body { 
+        background-color: rgb(215, 215, 215);
+    }
+    .card{
+        box-shadow: 100px 100px 100px #E3E7EB;
+        position:relative; 
+    } 
+    h1 {
+        color:black; 
+        font-family: 'Helvetica';font-size: 40px;}
+    h3 {
+        color:rgb(101, 34, 34); 
+        font-family: 'Helvetica'}
+    p {
+        color:black; 
+        font-family: 'Helvetica'}
+    h2 {
+        color:black; 
+        font-family: 'Helvetica'}
+    h5 {font-size: 15px; 
+        font-family: 'Helvetica'}
+    .search {
+        color:rgb(101, 34, 34);
+        
+    }
+    .connect {
+        color:rgb(101, 34, 34); 
+        font-family: 'Helvetica'
+    }
+
+</style>
+
 {% if blog.image.url != None %}
 <img src="{{ blog.image.url }}" height="400", width="400">
 {% endif %}
