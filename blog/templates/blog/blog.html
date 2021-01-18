@@ -1,3 +1,95 @@
+<h6>Copyright by ConnectIt Inc.
+</h6>
+
+<!-- Styling -->
+<style>
+    body { 
+        background-color: rgb(215, 215, 215);
+    }
+    .card{
+        box-shadow: 0 16px 48px #E3E7EB;
+        position:relative; 
+        font-family: 'Helvetica'
+    } 
+    h1 {color:black; 
+        text-align: center;
+        font-family: 'Helvetica'
+    }
+        
+    h3 {color:hsl(0, 0%, 0%); 
+        text-align: center;
+        font-family: 'Helvetica';
+        position: relative;
+    }
+    p {color:rgb(101, 34, 34); 
+      text-align: center;
+      font-family: 'Helvetica';
+      font-style: italic;
+    }
+
+    h2 {color:rgb(101, 34, 34); 
+        text-align: center; 
+        font-family: 'Helvetica'}
+    h5 {font-size: 15px; 
+        text-align: center; 
+        font-family: 'Helvetica'}
+    .search {
+        color:rgb(101, 34, 34); text-align: center
+        
+    }
+    .connect {
+        color:rgb(101, 34, 34); 
+        text-align: center;
+        font-family: 'Helvetica'
+    }
+
+</style>
+
+
+{% block sidebar %}
+<!-- Sidebar Widgets Column -->
+<div class="col-md-4 float-right ">
+<div class="card my-4">
+    <h1>ConnectIt</h1>
+    <header class="masthead">
+        <div class="container">
+            <div class="row">
+                <div class=" col-md-8 col-md-10 mx-auto">
+                    <div class="site-heading">
+                        <h3 class=" site-heading my-4 mt-3 text-white">
+                         {% if user.is_authenticated %}
+                            Welcome, {{ user.username }}!
+                            {% else %}
+                            Welcome!
+                            {% endif %}
+                        </h3>
+                        <p class="text-light">Meet friends, meet peers. Make lasting relationships. &nbsp
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="card-body">
+        <p class="card-text">Programmed with Python, JavaScript, HTML, CSS, and Django</p>
+        <a href="https://facebook.com/connectit"
+           class="connect">Connect With Us!</a>
+    </div>
+</div>
+</div>
+
+{% endblock sidebar %}
+
+
+<!-- Search Bar -->
+<div class="search">
+    <form method="get">
+        <input type="text" class="form-control" name="q" id="id_q" placeholder="Search...">
+
+    </form>
+</div>
+
 <h1>Student List</h1>
 
 
